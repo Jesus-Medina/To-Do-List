@@ -1,0 +1,77 @@
+/* Globales */
+html {
+  font-size: 62.5%; /* Resetear el font-size para ocupar REM a 10px*/
+  box-sizing: border-box; /* Hack para boxmodel*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: white;
+  font-size: 16px; /* 1rem = 10px */
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+}
+html, body {
+height:100%;
+margin:0;
+display: flex;
+flex-direction: column;
+}
+/* Fin de bloque Globales */
+
+.container-flex header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-flex .todo-container {
+  height: 80vh;
+}
+
+.todo-container .todo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.todo-div > *{
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.todo-div p {
+  min-width: 30%;
+  max-width: 30%;
+  overflow: scroll;
+  padding: 1rem;
+  color: black;
+  background-color: white;
+}
+
+.todo-div h4 {
+  padding: 1rem;
+  color: black;
+  background-color: white;
+
+}
+
+.todo-div .checks-div {
+  border: none;
+}
+
+.todo-div .checks-div > *{
+  margin: 1rem;
+}
+
+.todo-div .checks-div button{
+  padding: 1rem;
+}

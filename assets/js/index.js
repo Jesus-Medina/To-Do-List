@@ -4,7 +4,7 @@ const ingresarBtn = document.querySelector("#ingresarBtn");
 const tareasDiv = document.querySelector("#tareas");
 const tareasRealizadas = document.querySelector("#realizadas");
 const totalTareas = document.querySelector("#totalTareas");
-let contador = 3;
+let contador = 0;
 
 //Creamos el arreglo
 const tareas = [];
